@@ -1,0 +1,704 @@
+:root {
+  --color-info: #34b5f0;
+  --color-success: #31e284;
+  --color-warning: #f0a834;
+  --color-danger: #ff3f3f;
+  --color-notification: white;
+  --color-dark: #131821;
+}
+
+.card-header h4 {
+  width: 48%;
+}
+
+.material-icons {
+  font-size: 18px !important;
+}
+
+.sidebar {
+  padding-bottom: 30px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+@page {
+  size: auto;
+  margin: 20mm 15mm;
+}
+
+.invoice {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 30px;
+  position: relative;
+}
+
+.invoice .btn_print {
+  position: absolute;
+  top: 15px;
+  right: 50px;
+}
+
+.invoice .underlineNumber {
+  text-decoration: underline;
+}
+
+.invoice .invoice_blank {
+  width: 1122px;
+  padding: 30px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.invoice .invoice_blank h2 {
+  font-size: 18px;
+  font-weight: bolder;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.invoice .invoice_blank h6 {
+  font-size: 16px;
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+.invoice .invoice_blank .invoice_blank_header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.invoice .invoice_blank .invoice_blank_header .provider {
+  width: 45%;
+}
+
+.invoice .invoice_blank .invoice_blank_header .provider p {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.invoice .invoice_blank .invoice_blank_header .provider p b {
+  font-style: normal;
+}
+
+.invoice .invoice_blank .invoice_blank_header .customer {
+  width: 45%;
+}
+
+.invoice .invoice_blank .invoice_blank_header .customer p {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.invoice .invoice_blank .invoice_blank_header .customer p b {
+  font-style: normal;
+}
+
+.invoice .invoice_blank table {
+  font-size: 14px;
+}
+
+.invoice .invoice_blank tbody {
+  font-size: 12px !important;
+}
+
+.invoice .invoice_blank .table td,
+.invoice .invoice_blank .table th {
+  padding: 0.25rem !important;
+  vertical-align: middle important;
+  font-size: 12px important;
+  border: solid #000 !important;
+  border-width: 0 1px 1px 0 !important;
+}
+
+.invoice .invoice_blank .invoice_blank_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.invoice .invoice_blank .invoice_blank_footer {
+  padding-top: 30px;
+}
+
+.invoice .invoice_blank .invoice_blank_footer .provider_txt {
+  font-size: 12px;
+}
+
+.invoice .invoice_blank .invoice_blank_footer .provider_txt span {
+  border-bottom: 1px solid #000;
+  display: inline-block;
+  width: 150px;
+}
+
+.invoice .invoice_blank .invoice_blank_footer .provider_txt i {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+.invoice .invoice_blank .invoice_blank_footer i {
+  font-size: 10px;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  display: inline-block;
+  font-weight: bold;
+}
+
+.wrapNormal {
+  white-space: normal !important;
+  width: 250px;
+}
+
+.bg_1 {
+  background: #1a80e2;
+}
+
+.bg_2 {
+  background: #CD5C5C;
+}
+
+.bg_3 {
+  background: #00008B;
+}
+
+.bg_4 {
+  background: #9932CC;
+}
+
+.bg_5 {
+  background: #00CED1;
+}
+
+.bg_6 {
+  background: #F0E68C;
+}
+
+.bg_7 {
+  background: #ADD8E6;
+}
+
+.bg_8 {
+  background: #9370DB;
+}
+
+.report {
+  flex-direction: column;
+}
+
+.report span {
+  font-weight: 500;
+  color: white;
+}
+
+.hot_link_block {
+  width: 100%;
+  height: 150px;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  color: #fff;
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  margin-right: 30px;
+  position: relative;
+}
+
+.hot_link_block:hover {
+  color: #fff;
+}
+
+.hot_link_block:hover:before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.icon_block {
+  height: 100%;
+  width: 100px;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid white;
+}
+
+.txt_block {
+  width: calc(100% - 80px);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.small {
+  max-width: 600px;
+  margin: 150px auto;
+}
+
+.btn-50 {
+  width: 48%;
+}
+
+.alertList {
+  width: 100%;
+  background-color: #a9dae2;
+  padding: 15px;
+  text-align: center;
+  color: #000;
+  font-weight: 500;
+}
+
+.profilePageComponent .card {
+  height: 100%;
+  margin-bottom: 0px !important;
+}
+
+.table {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.table th,
+.table td {
+  white-space: nowrap;
+  /* css-3 */
+  white-space: -moz-nowrap;
+  /* Mozilla, since 1999 */
+  white-space: -nowrap;
+  /* Opera 4-6 */
+  white-space: -o-nowrap;
+  /* Opera 7 */
+  word-wrap: normal;
+  /* Internet Explorer 5.5+ */
+}
+
+.not_importad_blanks li {
+  list-style: none;
+}
+
+.card-footer {
+  display: flex;
+}
+
+.card-footer h6 {
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+.card-footer a,
+.card-footer {
+  color: black;
+}
+
+.how_to_use {
+  background-color: skyblue;
+  padding: 0 5px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+td:first-child {
+  border-left-color: #dee2e6 !important;
+}
+
+thead tr th {
+  background: white;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 1px 0px 0px rgba(0, 0, 0, 0.1);
+  border-bottom: none;
+}
+
+thead tr:nth-child(2) th {
+  top: 28px;
+}
+
+thead tr:nth-child(3) th {
+  top: 56px;
+}
+
+.table-responsive {
+  overflow-x: unset;
+}
+
+@media (max-width: 1700px) {
+  .table-responsive {
+    overflow-x: auto;
+  }
+}
+
+.vs-sidebar--items .card-body {
+  overflow: auto;
+}
+
+@media (max-width: 1400px) {
+  .sidebar-open .dashboardPageComponent .hot_link_block {
+    height: 100px;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .sidebar-open .dashboardPageComponent .hot_link_block .icon_block {
+    width: 70px;
+    font-size: 30px;
+  }
+
+  .sidebar-open .dashboardPageComponent .hot_link_block .txt_block {
+    padding: 0 10px;
+    width: calc(100% - 70px);
+  }
+
+  .sidebar-open .dashboardPageComponent .hot_link_block .txt_block span,
+  .sidebar-open .dashboardPageComponent .hot_link_block .txt_block p {
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+
+  .dashboardPageComponent .card-header h4 {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1300px) {
+  .sidebar-open .dashboardPageComponent .hot_link_block .icon_block {
+    width: 60px;
+    font-size: 26px;
+  }
+
+  .sidebar-open .dashboardPageComponent .hot_link_block .txt_block {
+    width: calc(100% - 60px);
+  }
+
+  .admin_daily_blank .table td,
+  .admin_daily_blank .table th,
+  .admin_daily_blank .table > thead > tr > th,
+  .paymentPageComponent .table td,
+  .paymentPageComponent .table th,
+  .paymentPageComponent .table > thead > tr > th {
+    padding: 5px !important;
+  }
+
+  .card-footer h6 {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .ApplySendPageComponent .loginForm,
+  .loginPageComponent .loginForm {
+    max-width: 450px;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .ApplySendPageComponent .btn_white,
+  .ApplySendPageComponent .btn_blue,
+  .loginPageComponent .btn_white,
+  .loginPageComponent .btn_blue {
+    min-width: unset;
+    width: 48%;
+  }
+
+  .myinvoiceshowComponentPage .invoice .invoice_blank,
+  .showInvoicesPageComponent .invoice .invoice_blank {
+    width: 100%;
+  }
+}
+
+@media (max-width: 991px) {
+  .logoTitle {
+    padding-bottom: 0px;
+  }
+
+  .input-group {
+    margin-bottom: 10px !important;
+  }
+
+  .profilePageComponent .nav {
+    justify-content: center;
+  }
+
+  .profilePageComponent .profileRight {
+    margin-bottom: 10px;
+  }
+
+  .profilePageComponent .profileLeft {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .mylicensesComponentPage .returns_header,
+  .myreportComponentPage .returns_header {
+    align-items: center;
+  }
+
+  .mylicensesComponentPage .card-header h4,
+  .myreportComponentPage .card-header h4 {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .mylicensesComponentPage .btn_search,
+  .myreportComponentPage .btn_search {
+    padding-top: 0rem !important;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .mylicensesComponentPage .btn_search .btn-50,
+  .myreportComponentPage .btn_search .btn-50 {
+    width: 49%;
+  }
+}
+
+@media (max-width: 767px) {
+  .dashboardPageComponent .hot_link_block {
+    height: 100px;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .dashboardPageComponent .hot_link_block .icon_block {
+    width: 70px;
+    font-size: 30px;
+  }
+
+  .dashboardPageComponent .hot_link_block .txt_block {
+    padding: 0 10px;
+    width: calc(100% - 70px);
+  }
+
+  .dashboardPageComponent .hot_link_block .txt_block span,
+  .dashboardPageComponent .hot_link_block .txt_block p {
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+
+  .ApplySendPageComponent .leftItem,
+  .loginPageComponent .leftItem {
+    display: none;
+  }
+
+  .ApplySendPageComponent .rightItem,
+  .loginPageComponent .rightItem {
+    width: 100%;
+  }
+
+  .mylicensesComponentPage .card-header h4.title_user {
+    width: 100%;
+  }
+
+  .myactPageComponent .backButtonFrame {
+    display: none;
+  }
+
+  .myactPageComponent .invoice .invoice_blank {
+    width: 100%;
+  }
+
+  .myactPageComponent .invoice_blank_footer {
+    display: none !important;
+  }
+
+  .myactPageComponent .invoice_blank_subtitle,
+  .myactPageComponent .invoice_blank_title {
+    font-size: 14px !important;
+  }
+
+  .reportInfoBlankComponentPage .card-header h4,
+  .reportPercent .card-header h4 {
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .reportInfoBlankComponentPage .title_return_blank,
+  .reportPercent .title_return_blank {
+    font-size: 18px;
+  }
+
+  .card-header h4 {
+    width: auto;
+  }
+
+  .myinvoiceshowComponentPage .customer,
+  .myinvoiceshowComponentPage .provider {
+    display: none;
+  }
+
+  .myinvoiceshowComponentPage .invoice_blank_title {
+    font-size: 14px !important;
+    margin-top: 0px !important;
+  }
+
+  .myinvoiceshowComponentPage .invoice_blank_subtitle {
+    font-size: 12px !important;
+    margin-bottom: 0px !important;
+  }
+
+  .myinvoiceshowComponentPage .printThisShowMyInvoise.invoice_blank {
+    padding: 15px !important;
+  }
+
+  .myinvoiceshowComponentPage .card-body {
+    min-height: unset;
+  }
+
+  .showInvoicesPageComponent .invoice_blank_header {
+    flex-direction: column;
+  }
+
+  .showInvoicesPageComponent .invoice_blank_header .provider {
+    width: 100% !important;
+    margin-bottom: 30px;
+  }
+
+  .main-sidebar .nav-item p {
+    font-size: 14px;
+  }
+
+  .vs-sidebar.vs-sidebar-primary.vs-sidebar-position-right {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  .card-footer {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .profilePageComponent .checkbox label {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 14px;
+  }
+
+  .profilePageComponent .checkbox label input {
+    margin-right: 5px;
+  }
+
+  .profilePageComponent .saveBtn {
+    width: 100%;
+  }
+
+  .profilePageComponent .saveBtn button {
+    width: 100%;
+  }
+
+  .dailyBlankPageNewComponent .card-header,
+  .dailyBlankPageComponent .card-header {
+    flex-wrap: nowrap;
+  }
+
+  .dailyBlankPageNewComponent .card-header h4,
+  .dailyBlankPageComponent .card-header h4 {
+    font-size: 18px;
+  }
+
+  .dailyBlankPageNewComponent .money,
+  .dailyBlankPageComponent .money {
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .ApplySendPageComponent .btn_white {
+    min-width: unset;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .ApplySendPageComponent .btn_blue {
+    min-width: unset;
+    width: 100%;
+  }
+
+  .loginPageComponent .btn_white {
+    min-width: unset;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .loginPageComponent .btn_blue {
+    min-width: unset;
+    width: 100%;
+  }
+
+  .myreportComponentPage .card-header h4 {
+    font-size: 16px;
+  }
+
+  .profilePageComponent .checkbox label {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 11px;
+  }
+
+  .profilePageComponent .checkbox label input {
+    margin-right: 5px;
+  }
+
+  .profilePageComponent .profileRight .nav.nav-pills .nav-item {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 350px) {
+  .ApplySendPageComponent .labelCheckbox,
+  .ApplySendPageComponent .forgotPass,
+  .loginPageComponent .labelCheckbox,
+  .loginPageComponent .forgotPass {
+    font-size: 13px;
+  }
+}
+
